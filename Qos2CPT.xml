@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Perferences>
+<QoSPerferences>
+	<node name = "A" id = "Q1">
+		<previousSet>
+			<previous>null</previous>
+		</previousSet>
+		<nextSet>
+			<next>C</next>
+		</nextSet>
+	</node>
+	<node name = "B" id = "Q2">
+		<previousSet>
+			<previous>null</previous>
+		</previousSet>
+		<nextSet>
+			<next>C</next>
+		</nextSet>
+	</node>
+	<node name = "C" id = "Q3">
+		<previousSet>
+			<previous>A</previous>
+			<previous>B</previous>
+		</previousSet>
+		<nextSet>
+			<next>null</next>
+		</nextSet>
+	</node>
+</QoSPerferences>
+<QoSRanks>
+	<QoS name="A" id = "Q1">
+		<rank>a2</rank>
+		<rank>a1</rank>
+	</QoS>
+	<QoS name="B" id = "Q2">
+		<rank>b2</rank>
+		<rank>b1</rank>
+	</QoS>
+	<QoS name="C" id = "Q3">
+		<rank>c2</rank>
+		<rank>c1</rank>
+	</QoS>
+</QoSRanks>
+<CPTables>
+<CPT id = "1">
+	<Pair id = "1">
+		<i>1</i>
+		<u>null</u>
+		<first>a1</first>
+		<last>a2</last>
+	</Pair>
+</CPT>
+<CPT id = "2">
+	<Pair id = "1">
+		<i>2</i>
+		<u>null</u>
+		<first>b1</first>
+		<last>b2</last>
+	</Pair>
+</CPT>
+<CPT id = "3">
+	<Pair id = "1">
+		<i>3</i>
+		<u>a1:b1</u>
+		<first>c1</first>
+		<last>c2</last>
+	</Pair>
+	<Pair id="2">
+		<i>3</i>
+		<u>a1:b2</u>
+		<first>c1</first>
+		<last>c2</last>
+	</Pair>
+	<Pair id="3">
+		<i>3</i>
+		<u>a2:b1</u>
+		<first>c1</first>
+		<last>c2</last>
+	</Pair>
+	<Pair id="4">
+		<i>3</i>
+		<u>a2:b2</u>
+		<first>c1</first>
+		<last>c2</last>
+	</Pair>
+</CPT>
+</CPTables>
+</Perferences>
